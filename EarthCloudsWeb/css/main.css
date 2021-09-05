@@ -1,0 +1,293 @@
+
+ /* ------------ BANNIERE TITRE/NAV ----------------*/ 
+.banner{
+	display: flex;
+	margin-left: -10px;
+	padding-right: 20px;
+	width: 100%;
+	position: fixed;
+	z-index: 3;
+	background-color: rgba(32,33,36,0.5);
+	top: 0px;
+	border-bottom: solid 0.1em white;
+}
+
+h1{
+	padding-left: 100px;
+	font-family: 'Londrina Solid', cursive;
+}
+
+.titre{
+	margin-left: 30px;
+	color: #fff;
+}
+.logo{
+	width: 80px;
+	float: left;
+}
+
+.back{
+	width: 100%;
+	height: 600px;
+	display: flex;
+	 animation: 300ms ease 0ms 1 normal both fade;
+    animation-duration: 1000ms;
+
+}
+
+@keyframes image {
+  0% {
+    background-image: url('overview1.jpg');
+  }
+  60%{
+    background-image: url('overview2.jpg');
+  }
+  100% {
+    background-image: url('overview3.jpg');
+    animation: 300ms ease 0ms 1 normal both fade;
+    animation-duration: 1000ms;
+  }
+}
+.imgBack{
+	width: 100%;
+	height: 100%;
+  	background-size: cover;
+  	animation: image 15s linear infinite ;
+  	box-sizing: border-box;
+  	position: absolute;
+}
+
+
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+li {
+  float: left;
+  display: block;
+  color: #fff;
+  margin-right: 40px;
+  padding-top: 30px;
+}
+li:hover{
+   cursor: pointer;
+   border-bottom: solid 1px white;
+}
+
+nav{
+	font-size: 16px;
+	line-height: 26px;
+	transition: 0.3s;
+}
+
+ /* ------------ BODY ----------------*/ 
+ body{
+ 	font-family: 'Noto Sans', sans-serif;
+ 	overflow-x: hidden;
+ 	margin: 0px;
+ 	background-color: #202124;
+ 	color: #fff;
+ }
+
+ .imgP{
+ 	max-width: 844px;
+ 	margin-left: 90px;
+ 	margin-top: 160px;
+ 	position: relative;
+ 	font-size: 96px;
+	line-height: 112px;
+ }
+
+ .inspi{
+ 	float: left;
+ 	border-radius: 10px;
+ 	margin-top: 150px;
+ 	margin-left: 40px;
+ }
+ .inspiP{
+ 	max-width: 700px;
+ 	font-size: 65px;
+ 	margin-top: 210px;
+ 	margin-left: 60px;
+ 	float: left;
+ }
+
+.profile{
+	position: relative;
+	float: right;
+	border-radius: 50%;
+	width: 200px;
+	bottom: 250px;
+}
+.trol{
+	position: relative;
+	float: right;
+	margin-right: -150px;
+	margin-top: -25px;
+}
+.enfin{
+	margin-top: 780px;
+	position: absolute;
+	font-size: 34px;
+	text-align: center;
+	margin-left: 100px;
+}
+
+.trait{
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.btn{
+	border-radius: 5px;
+	border: white 2px solid;
+ 	background-color: #202124;
+ 	color: #fff;
+ 	margin-top: 300px;
+ 	font-size: 25px;
+ 	transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #C7EDE6;
+  color: black;
+}
+
+.nomPays{
+    margin-top: 120px;
+    padding-left: 40px;
+    padding-bottom: 26px;
+    width: 100%;
+	border-bottom: white 1px solid;
+}
+
+input{
+	border-radius: 14px;
+	font-weight: bold;
+	background: #eaedf7;
+	border: 0px;
+	font-size:  0.8em;
+	padding: 7px;
+	outline: none;
+}
+
+input::placeholder{
+	color: #94a4d3;
+	padding-left: 2px;
+}
+
+.fond{
+	position: absolute;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	margin-top: 22%;
+}
+.entrez{
+	position: relative;
+	margin-top: 12px;
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.imgPP{
+	position: relative;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+.fondd{
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+
+}
+.info{
+	border-left: 2px solid #C7EDE6;
+	border-radius: 10px;
+	padding: 10px;
+	margin-left: 38%;
+	margin-top: 24px;
+	background-color: #36393F;
+	position: fixed;
+	width: 300px;
+	height: min-content;
+	margin-bottom: 0px;
+}
+.tete{
+	display: flex;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 34px;
+	margin-bottom: 0px;
+}
+
+.drapo{
+	border-radius: 5px;
+	height: 40px;
+}
+
+
+@keyframes spawn {
+	0% {
+    opacity: 0;
+    transform: translateY(20%);
+}
+	100% {
+	opacity: 1;
+	transform: translateY(0%);
+	}
+} 
+
+.inspiP{
+	animation: 1000ms ease 0ms 1 normal both spawn;
+	animation-delay: 2500ms;
+}
+.inspi{
+	animation: 500ms ease 0ms 1 normal both spawn;
+	animation-delay: 2500ms;
+}
+.profile{
+	animation: 1500ms ease 0ms 1 normal both spawn;
+	animation-delay: 2500ms;
+}
+.troll{
+	animation: 1500ms ease 0ms 1 normal both spawn;
+	animation-delay: 2500ms;
+}
+
+.trol{
+	animation: 1500ms ease 0ms 1 normal both spawn;
+	animation-delay: 2500ms;
+}
+.enfin{
+	animation: 2000ms ease 0ms 1 normal both spawn;
+	animation-delay: 5000ms;
+}
+
+@keyframes fade {
+	0% {
+    opacity: 0;
+}
+	100% {
+	opacity: 1;
+	}
+} 
+
+.pass-icon{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	margin-left: 135px;
+	
+}
